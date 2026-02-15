@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="کتاب , انتشارات , افق , books , publishing ,انتشارات افق" />
+    <title>انتشارات افق</title>
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <script src="https://kit.fontawesome.com/794a553e0f.js" crossorigin="anonymous"></script>
+    <script src="JS/jquery.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 50) {
+                    $("#kids .hr").css("width", "120px");
+                } else {
+                    $("#kids .hr").css("width", "10px");
+                }
+                if ((($(window).scrollTop() > 1000) && ($(window).width() > 990)) ||
+                    (($(window).scrollTop() > 1500) && ($(window).width() > 570) && ($(window).width() < 990) ||
+                        (($(window).scrollTop() > 2800) && ($(window).width() < 570)))) {
+                    $("#suggestion .hr").css("width", "180px");
+                    $("#shop").css("border-top", "0");
+                } else {
+                    $("#suggestion .hr").css("width", "10px");
+                    $("#shop").css("border-top", "3px solid rgb(255, 60, 0)");
+
+                }
+                if ((($(window).scrollTop() > 1600) && ($(window).width() > 990)) ||
+                    (($(window).scrollTop() > 2000) && ($(window).width() > 570) && ($(window).width() < 990) ||
+                        (($(window).scrollTop() > 3400) && ($(window).width() < 570)))) {
+                    $("#authorssection .hr").css("width", "150px");
+                    $("#writer").css("border-top", "3px solid rgb(255, 60, 0)");
+                } else {
+                    $("#authorssection .hr").css("width", "10px");
+                    $("#writer").css("border-top", "0");
+                }
+
+                if ((($(window).scrollTop() > 1900) && ($(window).width() > 990)) ||
+                    (($(window).scrollTop() > 2300) && ($(window).width() > 570) && ($(window).width() < 990) ||
+                        (($(window).scrollTop() > 3800) && ($(window).width() < 570)))) {
+                    $("#aboutus .hr").css("width", "150px");
+                    $("#writer").css("border-top", "0");
+                    $("#abt").css("border-top", "3px solid rgb(255, 60, 0)");
+
+                } else {
+                    $("#aboutus .hr").css("width", "10px");
+                    $("#abt").css("border-top", "0");
+
+                }
+
+                if ($(window).scrollTop() < 500) {
+                    $("#shop").css("border-top", "0");
+
+                }
+                if ($(window).scrollTop() > 50) {
+                    $(".teenpost").addClass("showposts")
+                }
+                if ($(window).scrollTop() > 500) {
+                    $("#nav").addClass("shadow ");
+                } else {
+                    $("#nav").removeClass("shadow");
+
+                }
+            });
+            // alert($(window).width());
+            // $("#scrol").click(() => { alert($(window).scrollTop()); })
+            $("#kidbook").click(function () {
+                $("#kidbook").removeClass("order-1").addClass("order-2 , middle");
+                if ($("#teenbook").hasClass("order-2")) {
+                    $("#teenbook").removeClass("order-2 , middle").addClass("order-1");
+                }
+                else if ($("#adultbook").hasClass("order-2")) {
+                    $("#adultbook").removeClass("order-2 , middle").addClass("order-3");
+                    $("#teenbook").removeClass("order-3").addClass("order-1");
+                }
+                $(".kidpost").removeClass("d-none");
+                $(".teenpost").addClass("d-none");
+                $(".adultpost").addClass("d-none");
+
+
+            });
+            $("#adultbook").click(function () {
+                $("#adultbook").removeClass("order-3").addClass("order-2 , middle");
+                if ($("#teenbook").hasClass("order-2")) {
+                    $("#teenbook").removeClass("order-2 , middle").addClass("order-3");
+                }
+                else if ($("#kidbook").hasClass("order-2")) {
+                    $("#kidbook").removeClass("order-2 , middle").addClass("order-1");
+                    $("#teenbook").removeClass("order-1").addClass("order-3");
+                }
+                $(".kidpost").addClass("d-none");
+                $(".teenpost").addClass("d-none");
+                $(".adultpost").removeClass("d-none");
+
+            });
+            $("#teenbook").click(function () {
+                if ($("#teenbook").hasClass("order-3")) {
+                    $("#teenbook").removeClass("order-3").addClass("order-2 , middle");
+                } else if ($("#teenbook").hasClass("order-1")) {
+                    $("#teenbook").removeClass("order-1").addClass("order-2 , middle");
+                }
+                if ($("#kidbook").hasClass("order-2")) {
+                    $("#kidbook").removeClass("order-2 , middle").addClass("order-1");
+                }
+                else if ($("#adultbook").hasClass("order-2")) {
+                    $("#adultbook").removeClass("order-2 , middle").addClass("order-3");
+                }
+                $(".kidpost").addClass("d-none");
+                $(".teenpost").removeClass("d-none");
+                $(".adultpost").addClass("d-none");
+
+            });
+            $("#dropdown p").click(function () {
+                $(window).scrollTop(500);
+            });
+            $("#gotokids").click(function () {
+                $("#kidbook").trigger("click");
+            });
+            $("#gototeen").click(function () {
+                $("#teenbook").trigger("click");
+            });
+            $("#gotoadult").click(function () {
+                $("#adultbook").trigger("click");
+            });
+            $("#slider img").each(function (index) {
+                $(this).css("z-index", 100 - index);
+            });
+            setInterval(function () {
+                $("#slides li img:first").css("opacity", 0);
+                setTimeout(function () {
+                    $("#slides ul").append($("#slides li:first"));
+                    $("#slider img").each(function (index) {
+                        $(this).css("z-index", 100 - index);
+                    });
+                    $("#slides li img").css("opacity", 1);
+                }, 3000);
+            }, 5000)
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <span id="scrol" style="width: 50px; height: 50px; top: 100px; right: 300px; background-color: chartreuse;" -->
+    <!-- class="position-fixed">click</span> -->
+    <nav>
+        <div id="nav" class="d-flex fixed-top flex-row align-middle justify-content-between">
+            <h1 id="pageicon" class="text-hide ml-2 ml-md-3 ml-xl-4 mt-1 mb-0 pb-0">Mahi Books</h1>
+            <ul id="menu" class="list-inline mr-3 mr-md-4 mr-xl-5 pr-0 mt-3 d-flex justify-content-start">
+                <li class="list-inline-item pt-1"><a href="#">خانه</a></li>
+                <li id="shop" class=" mx-2 mx-lg-3 pt-1 dropdown list-inline-item" data-toggle="dropdown"><a
+                        href="#">فروشگاه <i class="fa fa-angle-down"></i> </a></li>
+                <ul id="dropdown" class="dropdown-menu">
+                    <p id="gotokids" class="dropdown-item">کتاب کودک</p>
+                    <p id="gototeen" class="dropdown-item">کتاب نوجوان</p>
+                    <p id="gotoadult" class="dropdown-item">کتاب بزرگسال</p>
+                </ul>
+                <li id="writer" class=" mx-2  mx-lg-3 pt-1 list-inline-item"><a href="#authorssection">نویسندگان</a></li>
+                <li id="abt" class=" mx-2  mx-lg-3 pt-1 list-inline-item"><a href="#aboutus">درباره ما</a></li>
+                <li class=" mx-2  mx-lg-3 pt-1 list-inline-item mr-1"><a href="#">ثبت نام</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="kids">
+        <div id="sectionheaders" class="d-flex justify-content-around">
+            <h2 id="kidbook" class="py-1 pl-3 order-1">کتاب کودک</h2>
+            <h2 id="teenbook" class="py-1 pl-3 middle order-2">کتاب نوجوان</h2>
+            <h2 id="adultbook" class="py-1 pl-3 order-3">کتاب بزرگسال</h2>
+
+        </div>
+
+        <div class="hr mx-auto"></div>
+        <div id="mainposts" class="d-flex flex-row flex-wrap">
+            <article class="col-sm-6 col-lg-4">
+                <div class="kidpost d-none post">
+                    <img src="Images/postkid1.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">نگاه کن جلد 1</h5>
+                        <span class="price">21000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="kidpost d-none post ">
+                    <img src="Images/kidpost5.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">تریسی بیکر</h5>
+                        <span class="price">25000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="kidpost d-none post ">
+                    <img src="Images/postkid3.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">اوف خرابکار</h5>
+                        <span class="price">70000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="kidpost d-none post ">
+                    <img src="Images/postkid4.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">نگاه کن جلد 2</h5>
+                        <span class="price">54000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="kidpost d-none post ">
+                    <img src="Images/kidpost6.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>کلاس اولی جلد 1</h5>
+                        <span class="price">28000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="kidpost d-none post">
+                    <img src="Images/kidpost7.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>کلاس اولی جلد 2</h5>
+                        <span class="price">21000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="teenpost post">
+                    <img src="Images/teen2.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>بینوایان</h5>
+                        <span class="price">95000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="teenpost w-0 post">
+                    <img src="Images/teen7.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>سرود کریسمس</h5>
+                        <span class="price">110000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="teenpost post">
+                    <img src="Images/teen6.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>الیور توییست</h5>
+                        <span class="price">110000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="teenpost post">
+                    <img src="Images/teen5.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>ایلیاد</h5>
+                        <span class="price">80000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="teenpost post">
+                    <img src="Images/teen4.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>اودیسه</h5>
+                        <span class="price">80000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="teenpost post">
+                    <img src="Images/teen3.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5>داستان دو شهر</h5>
+                        <span class="price">110000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="adultpost d-none post ">
+                    <img src="Images/adult1.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">ماهی ها نگاهم میکنند</h5>
+                        <span class="price">39000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="adultpost d-none post ">
+                    <img src="Images/adult2.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">پی یر و ژان</h5>
+                        <span class="price">21000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="adultpost d-none post ">
+                    <img src="Images/adult3.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">جاده ی لس آنجلس</h5>
+                        <span class="price">21000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="adultpost d-none post ">
+                    <img src="Images/adult4.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">شمال و جنوب</h5>
+                        <span class="price">42000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="adultpost d-none post ">
+                    <img src="Images/adult5.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">گابریل لامبر</h5>
+                        <span class="price">65000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-6 col-lg-4">
+                <div class="adultpost d-none post ">
+                    <img src="Images/adult6.jpg" class="" width="200" height="280">
+                    <div class="">
+                        <h5 class="">از غبار بپرس</h5>
+                        <span class="price">58000 </span> <span class="price">تومان</span>
+                        <a href="#" class="cart">افزودن به سبد خرید</a>
+
+                    </div>
+                </div>
+            </article>
+
+            <div class="mx-auto align-middle showall">
+                <span class="px-2 pb-3">مشاهده همه</span><i class="fas fa-arrow-left px-2"></i>
+            </div>
+        </div>
+    </main>
+    <section id="suggestion">
+        <h2 class="mx-auto text-center py-1">پیشنهاد های افق
+        </h2>
+        <div class="hr mx-auto"></div>
+        <div id="slides" class="mb-4">
+            <div>
+                <ul id="slider">
+                    <li><img src="Images/slide 1.jpg"></li>
+                    <li><img src="Images/slide 2.jpg"></li>
+                    <li><img src="Images/slide 3.jpg"></li>
+                    <li><img src="Images/slide 4.jpg"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="authorssection">
+        <div>
+            <h2 class="mx-auto text-center py-1">نویسندگان
+            </h2>
+            <div class="hr mx-auto mb-3"></div>
+        </div>
+        <div id="authors" class="pb-2 d-flex flex-row flex-wrap justify-content-between">
+            <article class="col-xs-6 col-md-3 col-lg-2 authorbox ">
+                <img class="rounded-circle shadow" src="Images/author1.jpg" width="150" height="150"><br>
+                <span class="authorname py-3 mx-auto">ویلیام شکسپیر</span>
+            </article>
+            <article class="col-xs-6 col-md-3 col-lg-2 authorbox">
+                <img class="rounded-circle shadow" src="Images/author6.jpg" width="150" height="150"><br>
+                <span class="authorname py-3 mx-auto">آنتوان چخوف</span>
+            </article>
+            <article class="col-xs-6 col-md-3 col-lg-2 authorbox">
+                <img class="rounded-circle shadow" src="Images/author3.jpg" width="150" height="150"><br>
+                <span class="authorname py-3 mx-auto">آگاتا کریستی</span>
+            </article>
+            <article class="col-xs-6 col-md-3 col-lg-2 authorbox">
+                <img class="rounded-circle shadow" src="Images/author4.jpg" width="150" height="150"><br>
+                <span class="authorname py-3 mx-auto">فیودور داستایفسکی</span>
+            </article>
+            <article class="col-xs-6 col-md-3 col-lg-2 authorbox d-md-none d-lg-block">
+                <img class="rounded-circle shadow" src="Images/author5.jpg" width="150" height="150"><br>
+                <span class="authorname py-3 mx-auto">پائولو کوئليو</span>
+            </article>
+            <article class="col-xs-6 col-md-3 col-lg-2 authorbox d-md-none d-lg-block">
+                <img class="rounded-circle shadow" src="Images/author2.jpg" width="150" height="150"><br>
+                <span class="authorname py-3 mx-auto">آلبر کامو</span>
+            </article>
+            <div class="col-12 mx-auto text-center showall">
+                <span class="px-2 pb-3">مشاهده همه</span><i class="fas fa-arrow-left px-2"></i>
+            </div>
+        </div>
+
+    </section>
+    <section id="aboutus">
+        <div>
+            <h2 class="mx-auto text-center">درباره ما</h2>
+            <div class="hr mx-auto mb-3"></div>
+        </div>
+        <div id="about" class="pb-3 text-center d-flex flex-row flex-wrap justify-content-around">
+            <img src="Images/about.jpg" class="  my-4 mx-4" width="380" height="300px">
+            <p class="w-75 w-md-50 mx-2 my-2">
+                نشر افق در سال ۱۳۶۹ تأسیس شد و تا ۱۲ سال کتاب‌هایی اغلب برای کودک و نوجوان منتشر می‌کرد. از سال ۱۳۸۱ افق
+                فعالیت خود را با انتشار ادبیات بزرگسال گسترش داد و تا امروز نزدیک به 1900 عنوان کتاب به جامعه‌ی فرهنگی
+                تقدیم کرده است.
+            </p>
+        </div>
+    </section>
+    <section id="ad" class="d-flex flex-row flex-wrap justify-content-around">
+        <div class="shadow m-2"><span class="align-middle pt-3 pr-2">پشتیبانی</span><i
+                class="pt-3 align-middle fas fa-comment"></i></div>
+        <div class="shadow m-2"><span class="align-middle pt-3 pr-2">عضو شتاب</span><i
+                class="pt-3 align-middle far fa-credit-card"></i></div>
+        <div class="shadow m-2"><span class="align-middle pt-3 pr-2">روش های ارسال</span><i
+                class="pt-3 align-middle fas fa-cart-arrow-down"></i></div>
+    </section>
+    <footer>
+        <div id="footer" class="row pt-3">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <ul>
+                    <li><a href="#"> درباره افق</a></li>
+                    <li><a href="#"> فرصت های شغلی </a></li>
+                    <li><a href="#"> نشانی فروشگاه </a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <ul>
+                    <li><a href="#">  تماس با ما </a></li>
+                    <li><a href="#"> خرید عمده </a></li>
+                    <li><a href="#"> نشانی فروشگاه </a></li>
+                    <li><a href="#"> کد های تخفیف </a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                <ul>
+                    <li><a href="#"> راهنمای خرید </a></li>
+                    <li><a href="#"> سوالات متداول </a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 pt-3 pr-4 pt-lg-0" id="contact">
+                <h2>با ما در ارتباط باشید!</h2>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        
+
+        <div id="terms">
+            <a href="#">حریم خصوصی</a>
+            <a href="#">شرایط و قوانین</a>
+            <i class="fa-brands fa-paypal"></i>
+            <i class="fa-brands fa-amazon-pay"></i>
+            <i class="fa-brands fa-apple-pay"></i>
+            <i class="fa-brands fa-google-pay"></i>
+        </div>
+        <div id="rights" class="pt-1">
+            <p>&copy; تمامی حقوق این سایت متعلق به <strong>فروشگاه آنلاین</strong> است</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="JS/jquery-3.3.1.slim.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+</body>
