@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="coffee, chamberlain-coffee, قهوه, فروشگاه" />
+    <title>Chamberlain Coffee</title>
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/grids.css">
+    <script src="https://kit.fontawesome.com/794a553e0f.js" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            $("#menu").click(function () {
+                $("#navbar").css("right", "0");
+            });
+            $("#exit").click(function () {
+                $("#navbar").css("right", "-350px");
+            });
+            $(".item1").click(function () {
+                if ($(".submenu1").css("display") == "none") {
+                    $(".submenu1").css("display", "block");
+
+                } else {
+                    $(".submenu1").css("display", "none");
+                }
+            });
+            $(".item2").click(function () {
+                if ($(".submenu2").css("display") == "none") {
+                    $(".submenu2").css("display", "block");
+
+                } else {
+                    $(".submenu2").css("display", "none");
+                }
+            });
+            $(".item3").click(function () {
+                if ($(".submenu3").css("display") == "none") {
+                    $(".submenu3").css("display", "block");
+
+                } else {
+                    $(".submenu3").css("display", "none");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <header>
+            <div id="top">
+                <div id="topad">
+                    <div><a id="text1" href="#">ارسال رایگان سفارش های بالای 30$</a>
+                        <a id="text2" href="#">همین حالا ثبت نام کنید</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="wrapper">
+                <div id="topmenu">
+                    <a href="#" id="menu"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+                    <img src="Images/logo.png" alt="chamberlain coffee logo" width="105" height="40" />
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                </div>
+                <div id="nav">
+                    <ul>
+                        <li> <a href="#">صفحه اصلی</a> </li>
+                        <li> <a href="#">پودر قهوه</a>
+                            <ul class="submenu">
+                                <div id="details">
+                                    <h2>برخی محصولات</h2>
+                                    <div class="bags products">
+                                        <div class="outer ">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="fox picture" src="Images/fox.png"
+                                                        alt="fox blend coffee bag" width="180"
+                                                        height="200" /><br /><span class="label">ترکیب wittzy
+                                                        fox</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="dog picture" src="Images/Socialdog.png"
+                                                        alt="social dog blend coffee bag" width="180"
+                                                        height="200" /><br /><span class="label">نرکیب social
+                                                        dog</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="bird picture" src="Images/earlybird.png"
+                                                        alt="early bird blend coffee bag" width="180"
+                                                        height="200" /><br /><span class="label">ترکیب early
+                                                        bird</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="owl picture" src="Images/owl.png"
+                                                        alt="night owl blend coffee bag" width="180"
+                                                        height="200" /><br /><span class="label">ترکیب night
+                                                        owl</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="coldbrew picture" src="Images/coldbrew.png"
+                                                        alt="night owl blend coffee bag" width="180"
+                                                        height="200" /><br /><span class="label">ترکیب elephant - قهوه
+                                                        سرد</span></a></div>
+                                        </div>
+
+                                    </div>
+                                    <span id="all"><a href="#"> مشاهده همه</a></span>
+                                    <div class="transparent"></div>
+                            </ul>
+                        </li>
+                        <li> <a href="#">ماچا و شکلات</a>
+                            <ul class="submenu">
+                                <div id="details">
+                                    <h2>برخی محصولات</h2>
+                                    <div class="bags products">
+                                        <div class="outer ">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="matcha picture" src="Images/matcha.png" alt="matcha"
+                                                        width="180" height="200" /><br /><span
+                                                        class="label">ماچا</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="mouse picture" src="Images/mouse.png"
+                                                        alt="mouse whole beans" width="180" height="200" /><br /><span
+                                                        class="label">دانه قهوه</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="grizzly picture" src="Images/grizzly.png"
+                                                        alt="grizzly cocoa blend" width="180" height="200" /><br /><span
+                                                        class="label"> ترکیب
+                                                        grizzly</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="mouse picture" src="Images/doublebeans.png"
+                                                        alt="mouse double beans" width="180" height="200" /><br /><span
+                                                        class="label">دانه قهوه-بسته
+                                                        دو عددی</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="matcha picture" src="Images/matchapack.png"
+                                                        alt="matcha pack" width="180" height="200" /><br /><span
+                                                        class="label"> پک ماچا</span></a></div>
+                                        </div>
+
+                                    </div>
+                                    <span id="all"><a href="#"> مشاهده همه</a></span>
+                                    <div class="transparent"></div>
+                            </ul>
+                        </li>
+                        <li> <a href="#">بسته ها</a>
+                            <ul class="submenu">
+                                <div id="details">
+                                    <h2>برخی محصولات</h2>
+                                    <div class="bags products">
+                                        <div class="outer ">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="matcha picture" src="Images/bundle2.png"
+                                                        alt="masonjar bundle" width="180" height="200" /><br /><span
+                                                        class="label">بسته
+                                                        mason jar</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="coldbrew picture" src="Images/bundle3.png"
+                                                        alt="xl cold brew bundle" width="180" height="200" /><br /><span
+                                                        class="label">بسته قهوه سرد بزرگ</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="grizzly picture" src="Images/bundle4.png"
+                                                        alt="cold brew bundle" width="180" height="200" /><br /><span
+                                                        class="label">بسته قهوه
+                                                        سرد</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="mouse picture" src="Images/bundle5.png"
+                                                        alt="new customes bundle" width="180" height="200" /><br /><span
+                                                        class="label">بسته ویژه مشتری های
+                                                        جدید</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="matcha picture" src="Images/bundle6.png"
+                                                        alt="sm cold brew bundle" width="180" height="200" /><br /><span
+                                                        class="label"> بسته قهوه سرد کوچک</span></a></div>
+                                        </div>
+
+                                    </div>
+                                    <span id="all"><a href="#"> مشاهده همه</a></span>
+                                    <div class="transparent"></div>
+                            </ul>
+                        </li>
+                        <li> <a href="#">لوازم جانبی</a>
+                            <ul class="submenu">
+                                <div id="details">
+                                    <h2>برخی محصولات</h2>
+                                    <div class="bags products">
+                                        <div class="outer ">
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="matcha picture" src="Images/straw.png" alt="straw pack"
+                                                        width="180" height="200" /><br /><span class="label"> نی - بسته
+                                                        10
+                                                        عددی</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="coldbrew picture" src="Images/tote.png" alt="tote bag"
+                                                        width="180" height="200" /><br /><span class="label">کیف پارچه
+                                                        ای</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="grizzly picture" src="Images/tumbler.png"
+                                                        alt="cold brew bundle" width="180" height="200" /><br /><span
+                                                        class="label">ماگ بزرگ</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="matcha picture" src="Images/masonjar.png" alt="masonjar"
+                                                        width="180" height="200" /><br /><span class="label">mason
+                                                        jar</span></a></div>
+                                            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><a href="#"><img
+                                                        class="owl picture" src="Images/cap.png" alt="cap" width="180"
+                                                        height="200" /><br /><span class="label">
+                                                        کلاه</span></a></div>
+                                        </div>
+
+                                    </div>
+                                    <span id="all"><a href="#"> مشاهده همه</a></span>
+                                    <div class="transparent"></div>
+                            </ul>
+                        </li>
+                        <li> <a href="#"> تماس با ما</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+
+    </section>
+    <div id="navbar">
+        <a id="exit" href="#"><i class="fa-solid fa-xmark"></i></a>
+        <h2>ثبت نام</h2>
+        <ul id="outerul">
+            <li> <a href="#">همه محصولات</a> </li>
+            <li> <a href="#">محصولات جدید</a> </li>
+            <li class="extra"> <a href="#">تک نفره</a> </li>
+            <li class="extra"> <a href="#">پودر قهوه</a> </li>
+            <li class="extra"> <a href="#">ماچا و شکلات</a> </li>
+            <li class="extra"> <a href="#">بسته ها</a> </li>
+            <li class="extra"> <a href="#">لوازم جانبی</a> </li>
+            <li> <a href="#">باشگاه مشتریان</a> </li>
+            <li> <a href="#"> ارتباط با ما</a> </li>
+            <li> <span class="flex"><a href="#">درباره...</a><i class="fa-solid fa-angle-down"></i></span>
+                <ul id="innerul">
+                    <li><a href="#">قهوه ها</a></li>
+                    <li><a href="#">طعم ها
+                        </a></li>
+                    <li><a href="#">دستور العمل ها</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="shipping">
+            <label for="country">ارسال به:</label>
+            <select name="country" id="country" placeholder="ارسال به:">
+                <option value="1">United States</option>
+                <option value="2">United Kingdom</option>
+                <option value="3">Europe</option>
+                <option value="4">Asia</option>
+            </select>
+        </div>
+    </div>
+    <main>
+        <section>
+            <div id="background">
+                <h2> ترکیب قهوه سرد جدید</h2>
+                <p>رونمایی از ترکیب جدید قهوه سرد با تخفیف شگفت انگیز</p>
+                <p>ارسال رایگان</p>
+                <input type="button" name="shop" value="خرید">
+            </div>
+        </section>
+        <div id="reviews">
+            <div id="review">
+                <p id="organic"><img src="Images/organic.png" alt="organic icon"> <span>کاملا ارگانیک </span></p>
+                <p id="rate"><span>4.8</span> <img src="Images/star.png" alt="star icon"> <img src="Images/star.png"
+                        alt="star icon"> <img src="Images/star.png" alt="star icon"> <img src="Images/star.png"
+                        alt="star icon"> <img src="Images/star.png" alt="star icon"></p>
+                <p id="original"><span><img src="Images/sun.png" alt="sun icon"> ساخت کالیفرنیا</span></p>
+            </div>
+        </div>
+        <section class="row posts section">
+            <div class="wrapper">
+                <div class="postheader">
+                    <h1>
+                        طعم عالی و تحویل سریع
+                    </h1>
+                    <p>قهوه ی ارگانیک با طعم عالی و تحویل کمتر از یک هفته درب منزل</p>
+                </div>
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="owl" src="Images/tiger.png" alt="tiger blend"></div>
+                        <a href="#" class="postlabel">ترکیب wild cat فوری</a><br />
+                        <span class="price">$23.99</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+                    </div>
+                </article>
+
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="grizzly" src="Images/bundle5.png"
+                                alt="new customers bundle"><span class="newproduct">10% تخفیف</span></div>
+                        <a href="#" class="postlabel">بسته ویژه مشتری های جدید</a><br />
+                        <span class="price off">$19.99</span> <span class="price">$18.99</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="coldbrew" src="Images/singlecat.png" alt="single cat blend">
+                        </div>
+                        <a href="#" class="postlabel">ترکیب curious cat تک نفره</a><br />
+                        <span class="price">$19.99</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="owl" src="Images/lemonadepack.png"
+                                alt="matcha lemonade pack"><span class="newproduct">محصول جدید</span></div>
+                        <a href="#" class="postlabel">پک لیموناد ماچا</a><br />
+                        <span class="price">$45.00</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+
+                    </div>
+
+                </article>
+
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="bird" src="Images/earlybird.png" alt="early bird blend"></div>
+                        <a href="#" class="postlabel">ترکیب early bird متوسط</a><br />
+                        <span class="price">$22.00</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="matcha" src="Images/straw.png" alt="steel straw pack"><span
+                                class="newproduct">10% تخفیف</span></div>
+                        <a href="#" class="postlabel">بسته 10 عددی نی فلزی</a><br />
+                        <span class="price off">$10.00</span> <span class="price">$9.00</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="owl" src="Images/doublebeans.png" alt="double whole beans"></div>
+                        <a href="#" class="postlabel">دانه قهوه بسته دو عددی</a><br />
+                        <span class="price">$40.99</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+                    </div>
+                </article>
+                <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="post">
+                        <div class="image"><img class="matcha" src="Images/tote.png" alt="tote bag"></div>
+                        <a href="#" class="postlabel">کیف پارچه ای</a><br />
+                        <span class="price">$40.99</span><br />
+                        <input type="button" class="cart" value="افزودن به سبد خرید">
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="row section">
+            <div class="wrapper">
+                <div class="postheader">
+                    <h1>جدیدترین محصولات</h1>
+                </div>
+                <ul id="slider">
+                    <li>
+                        <div id="slider1"><img src="Images/slider1.jpg"><a href="#">نسخه محدود ماگ دو لایه جدید</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="slider2"><img src="Images/slider2.jpg"><a href="#">ترکیب های جدید پودر های قهوه</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="slider3"><img src="Images/slider3.jpg"><a href="">لیموناد ماچا به صورت تکی و بسته‌ای با
+                                تخفیف ویژه</a></div>
+                    </li>
+                    <li>
+                        <div id="slider4"><img src="Images/slider4.jpg"><a href="#">نسخه محدود ترکیب fluffylamb جدید</a>
+                        </div>
+                    </li>
+                </ul>
+                <div id="circles">
+                    <div class="circles"></div>
+                    <div class="circles"></div>
+                    <div class="circles"></div>
+                    <div class="circles"></div>
+                </div>
+            </div>
+        </section>
+        <section class="row section inspiration ">
+            <div class="postheader">
+                <h1>ایده های Chamberlain Coffee</h1>
+            </div>
+            <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="inspo">
+                    <img src="Images/inspie1.jpg" alt="لیوان">
+                    <p><span class="bold">لیوان ها - </span> <br /> هر قهوه را در لیوان خودش امتحان کنید</p>
+                    <a href="#">مشاهده محصول <i class="fa-solid fa-angle-left"></i></a>
+                </div>
+            </article>
+            <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="inspo">
+                    <img src="Images/inspire2.jpg" alt="هات چاکلت">
+                    <p><span class="bold">هات چاکلت - </span> <br /> قابل استفاده به صورت سرد و گرم </p>
+                    <a href="#">مشاهده محصول <i class="fa-solid fa-angle-left"></i></a>
+                </div>
+            </article>
+            <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="inspo">
+                    <img src="Images/inspire4.jpg" alt="وانیل">
+                    <p><span class="bold">ترکیب وانیلی - </span> <br /> جدید ترین ترکیب را امتحان کنید</p>
+                    <a href="#">مشاهده محصول <i class="fa-solid fa-angle-left"></i></a>
+                </div>
+            </article>
+            <article class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="inspo">
+                    <img src="Images/inspire3.jpg" alt="لیوان">
+                    <p><span class="bold"> ماچا - </span> <br /> ماچا را در بسته بندی جدید امتحان کنید</p>
+                    <a href="#">مشاهده محصول <i class="fa-solid fa-angle-left"></i></a>
+                </div>
+            </article>
+        </section>
+        <section class="row section ">
+            <div class="quotes">
+                <div class="quote" id="qoute1">
+                    <blockquote><i class="fa-solid fa-quote-right"></i>با ترکیب های جدید، متفاوت، و خوشمزه از بهترین
+                        قهوه هاست<i class="fa-solid fa-quote-left"></i></blockquote>
+                    Michelle Cortés - Refinery 29
+                </div>
+                <div class="quote" id="quote2">
+                    <blockquote><i class="fa-solid fa-quote-right"></i>داشتن یک برند قهوه از رویاهای کودکیم بود و حالا
+                        به واقعیت تبدیل شده<i class="fa-solid fa-quote-left"></i></blockquote> Emma
+                    Chamberlain - Forbes
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="section newsletter">
+            <article id="newsletter" class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="Images/form.png" width="200px" height="200px">
+                </div>
+                <div class="col-xs-12 col-sm-6 right">
+                    <h1>اخبار جدید را از دست ندهید</h1>
+                    <p>
+                        با عضویت در خبرنامه از تمامی اخبار جدی مطلع شوید و برای تمامی محصولات جدید کد تخفیف 10 درصدی
+                        دریافت کنید
+                    </p>
+                    <form>
+                        <input type=" email" name="email" placeholder="ایمیل خود را وارد کنید"><br />
+                        <button type="submit">عضویت</button>
+                    </form>
+                </div>
+            </article>
+            <article id="footer" class="row">
+                <div id="last">
+                    <div class="col-xs-12 col-md-8">
+                        <ul class="menu">
+                            <li class="item1"> <span>فروشگاه</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="submenu1">
+
+                                    <li class="subitem"> <a href="#">همه محصولات</a> </li>
+                                    <li class="subitem"> <a href="#">تک نفره</a> </li>
+                                    <li class="subitem"> <a href="#">پودر قهوه</a> </li>
+                                    <li class="subitem"> <a href="#">ماچا و شکلات</a> </li>
+                                    <li class="subitem"> <a href="#">بسته ها</a> </li>
+                                    <li class="subitem"> <a href="#">لوازم جانبی</a> </li>
+                                </ul>
+                            </li>
+                            <li class="item2"> <span>اطلاعات کاربری</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="submenu2">
+                                    <li class="subitem"><a href="#">ثبت نام</a></li>
+                                    <li class="subitem"><a href="#">ورود</a></li>
+                                    <li class="subitem"><a href="#">مدیریت حساب</a></li>
+                                </ul>
+                            </li>
+                            <li class="item3"><span>خدمات</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="submenu3">
+
+                                    <li class="subitem"><a href="#">ارتباط با ما</a></li>
+                                    <li class="subitem"><a href="#">ارسال و بازگشت کالا</a></li>
+                                    <li class="subitem"><a href="#">نقد خدمات مشتریان</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-4" id="contact">
+                        <h2>با ما در ارتباط باشید!</h2>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-tiktok"></i>
+                    </div>
+                </div>
+                <div id="terms">
+                    <a href="#">حریم خصوصی</a>
+                    <a href="#">شرایط و قوانین</a>
+                    <i class="fa-brands fa-paypal"></i>
+                    <i class="fa-brands fa-amazon-pay"></i>
+                    <i class="fa-brands fa-apple-pay"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                </div>
+                <div id="rights"><p>&copy; تمامی حقوق این سایت مطعلق به <strong>فروشگاه آنلاین</strong> است</p></div>
+            </article>
+        </section>
+    </footer>
+    <div id="help"><i class="fa-solid fa-comment"></i> پشتیبانی</div>
+</body>
+
+</html>

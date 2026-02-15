@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+    padding: 20px;
+    font-family: "Montserrat",sans-serif;
+    background-color: #f7f7f7;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+h1{
+    font-size: 36px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 13px;
+    font-weight: bold;
+    margin:15px 5px 7px 5px;
+}
+input{
+    padding: 5px;
+    margin: 0px 5px 8px 5px;
+}
+button{
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:rgb(147, 10, 69);
+    color: white;
+    transition: background-color .2s ease;
+}
+button:hover{
+    background-color:rgb(130, 8, 61);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+#total {
+    font-weight: bold;
+}
